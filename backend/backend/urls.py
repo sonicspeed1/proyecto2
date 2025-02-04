@@ -1,16 +1,3 @@
-
-from django.contrib import admin
-from django.urls import path, include
-from django.conf import settings
-from django.conf.urls.static import static
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('auth/', include('authapp.urls')),  
-    path('api/', include('peinado.urls')),  
-    path('api/', include('manicura_pedicura.urls')), 
-    path('api/', include('cosmetico.urls')),
-]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+version https://git-lfs.github.com/spec/v1
+oid sha256:b612ad0a99bee668a86f1d8837357b73aeaaac07efefa425afb55dbce96adc9e
+size 541
